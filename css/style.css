@@ -1,0 +1,428 @@
+/* =========================================================
+   Translational Bioinformatics Lab — Custom Styles
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+    --header-min-height: 140px;
+    --nav-bg:     #1c1c1c;
+    --nav-active: #e07820;
+    --art-width:  280px;
+    --blue-dark:  #0b1f3a;
+    --blue-mid:   #174a7c;
+    --content-bg: #ffffff;
+}
+
+/* ---- Reset / Global ---- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e8eef4;
+}
+
+a { text-decoration: none; }
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+.site-header {
+    position: relative;
+    line-height: 0;          /* removes gap beneath the img element */
+    background: var(--blue-dark);
+}
+
+.header-bg-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-inner {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title-block h1 {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.9rem, 4.5vw, 3.8rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.1;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.85);
+    text-align: center;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+.site-nav {
+    background: var(--nav-bg);
+    border-top: 2px solid var(--nav-active);
+    border-bottom: 2px solid var(--nav-active);
+}
+
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.site-nav li a {
+    display: block;
+    color: #e0e0e0;
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    padding: 13px 26px;
+    transition: color 0.15s, background 0.15s;
+}
+.site-nav li a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.08);
+}
+.site-nav li a.active {
+    color: var(--nav-active);
+}
+
+/* =========================================================
+   MAIN LAYOUT  (left art + content)
+   ========================================================= */
+.page-body {
+    display: flex;
+    align-items: stretch;
+    min-height: 70vh;
+}
+
+/* ---- Left art strip ---- */
+.left-art {
+    width: var(--art-width);
+    flex-shrink: 0;
+    align-self: stretch;
+    background: url('../img/left_panel.png') top center / 100% auto no-repeat;
+    background-color: var(--content-bg);
+}
+
+/* ---- Content area ---- */
+.content-area {
+    flex: 1;
+    min-width: 0;
+    background: var(--content-bg);
+    padding: 28px 36px 40px;
+    border-left: 1px solid #c8d8e8;
+}
+
+/* =========================================================
+   CONTENT TYPOGRAPHY
+   ========================================================= */
+.content-area h2.section-title {
+    color: var(--blue-mid);
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #d0dce8;
+}
+
+.content-area p.lead-text {
+    color: #444;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 20px;
+}
+
+/* Sub-sections */
+.sub-section {
+    margin-bottom: 28px;
+}
+.sub-section h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    margin-bottom: 8px;
+}
+.sub-section p {
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Placeholder content blocks */
+.placeholder-block {
+    background: #f0f4f8;
+    border: 1px dashed #a0b4c8;
+    border-radius: 6px;
+    padding: 30px 24px;
+    text-align: center;
+    color: #6a88a0;
+    font-size: 0.92rem;
+    margin-bottom: 20px;
+}
+.placeholder-block .placeholder-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.4;
+}
+
+/* =========================================================
+   PEOPLE PAGE
+   ========================================================= */
+.person-card {
+    flex: 0 0 calc(25% - 12px);
+    min-width: 140px;
+    text-align: center;
+}
+.person-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    margin: 0 auto 10px;
+    border: 3px solid #d0dce8;
+}
+.person-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #1c1c1c;
+    margin-bottom: 2px;
+}
+.person-role {
+    font-size: 0.78rem;
+    color: #5a7a9a;
+}
+@media (max-width: 768px) {
+    .person-card { flex: 0 0 calc(50% - 10px); }
+}
+@media (max-width: 480px) {
+    .person-card { flex: 0 0 100%; }
+}
+
+.people-group-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--blue-mid);
+    margin: 24px 0 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #d0dce8;
+}
+
+.people-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+.person-card {
+    flex: 0 0 calc(33% - 10px);
+    min-width: 160px;
+}
+@media (max-width: 600px) {
+    .person-card { flex: 0 0 100%; }
+}
+
+/* =========================================================
+   PUBLICATION PAGE
+   ========================================================= */
+.pub-year-group { margin-bottom: 24px; }
+.pub-year {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--blue-mid);
+    margin-bottom: 8px;
+}
+.pub-list {
+    list-style: decimal;
+    padding-left: 28px;
+}
+.pub-entry {
+    margin-bottom: 10px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #333;
+    padding-left: 4px;
+}
+a.pub-link {
+    color: var(--blue-mid);
+    text-decoration: none;
+    border-bottom: 1px solid #b0c8e0;
+    transition: color 0.15s, border-color 0.15s;
+}
+a.pub-link:hover {
+    color: var(--nav-active);
+    border-bottom-color: var(--nav-active);
+}
+
+/* =========================================================
+   RESEARCH PAGE
+   ========================================================= */
+.research-section {
+    margin-bottom: 36px;
+    overflow: hidden;
+}
+.research-img {
+    float: right;
+    width: 280px;
+    margin: 0 0 12px 24px;
+    border: 1px solid #d8e4ee;
+    border-radius: 4px;
+}
+.research-img img {
+    width: 100%;
+    display: block;
+}
+.research-img figcaption {
+    font-size: 0.72rem;
+    color: #888;
+    text-align: center;
+    padding: 4px 6px;
+    background: #f7fafc;
+    border-top: 1px solid #d8e4ee;
+}
+@media (max-width: 768px) {
+    .research-img {
+        float: none;
+        width: 100%;
+        margin: 0 0 14px 0;
+    }
+}
+
+/* =========================================================
+   SOFTWARE PAGE
+   ========================================================= */
+.software-entry {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 18px 0;
+    border-bottom: 1px solid #e8eef4;
+}
+.software-entry:last-child {
+    border-bottom: none;
+}
+.software-logo {
+    flex: 0 0 120px;
+    text-align: center;
+}
+.software-logo img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+.software-body {
+    flex: 1;
+    min-width: 0;
+}
+.software-name {
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+    color: #222;
+}
+.software-desc {
+    font-size: 0.86rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* =========================================================
+   TEACHING PAGE
+   ========================================================= */
+.lecture-list {
+    margin-bottom: 12px;
+}
+.lecture-entry {
+    padding: 7px 0;
+    border-bottom: 1px solid #eef2f6;
+    font-size: 0.90rem;
+    color: #333;
+    line-height: 1.5;
+}
+.lecture-entry:last-child {
+    border-bottom: none;
+}
+.lecture-num {
+    font-weight: 700;
+    color: var(--blue-mid);
+    margin-right: 4px;
+}
+.lecture-refs {
+    display: block;
+    padding-left: 1.6em;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 2px;
+}
+
+/* =========================================================
+   CONTACTS PAGE
+   ========================================================= */
+.profile-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+.profile-link {
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--blue-mid);
+    margin-bottom: 8px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.site-footer {
+    background: var(--nav-bg);
+    color: #888;
+    font-size: 0.78rem;
+    text-align: center;
+    padding: 14px;
+}
+
+/* =========================================================
+   RESPONSIVE — collapse left art on small screens
+   ========================================================= */
+@media (max-width: 768px) {
+    .left-art { display: none; }
+    .header-inner { padding: 14px 16px; }
+    .content-area { padding: 18px 16px 30px; }
+    .header-title-block h1 { font-size: 1.4rem; }
+}
+
+@media (max-width: 480px) {
+    .site-nav li a {
+        padding: 9px 10px;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+    }
+}
