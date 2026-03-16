@@ -109,7 +109,7 @@ a { text-decoration: none; }
     width: var(--art-width);
     flex-shrink: 0;
     align-self: stretch;
-    background: url('../img/left_panel.png') top center / 100% auto no-repeat;
+    background: url('../img/left_panel2.png') top center / 100% auto no-repeat;
     background-color: var(--content-bg);
 }
 
