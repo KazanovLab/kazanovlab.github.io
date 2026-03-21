@@ -440,23 +440,20 @@ a.pub-link:hover {
     bottom: 0;
     display: flex;
     align-items: center;
-    gap: 0;
 }
-.site-nav .lang-switcher a {
-    display: inline-block;
+.lang-switcher a {
     color: #777;
     font-size: 0.72rem;
     font-weight: 400;
     letter-spacing: 0.05em;
     padding: 4px 5px;
     transition: color 0.15s;
-    background: none;
+    text-decoration: none;
 }
-.site-nav .lang-switcher a:hover {
+.lang-switcher a:hover {
     color: #bbb;
-    background: none;
 }
-.site-nav .lang-switcher a.lang-active {
+.lang-switcher a.lang-active {
     color: var(--nav-active);
 }
 .lang-switcher span {
