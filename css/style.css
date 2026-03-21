@@ -464,6 +464,15 @@ a.pub-link:hover {
     font-size: 0.72rem;
     line-height: 1;
 }
+@media (max-width: 600px) {
+    .lang-switcher {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        padding: 5px 0 7px;
+        border-top: 1px solid rgba(255,255,255,0.07);
+    }
+}
 
 /* =========================================================
    FOOTER
