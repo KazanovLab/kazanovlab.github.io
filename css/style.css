@@ -67,6 +67,7 @@ a { text-decoration: none; }
     background: var(--nav-bg);
     border-top: 2px solid var(--nav-active);
     border-bottom: 2px solid var(--nav-active);
+    position: relative;
 }
 
 .site-nav ul {
@@ -396,6 +397,72 @@ a.pub-link:hover {
     letter-spacing: 0.06em;
     color: var(--blue-mid);
     margin-bottom: 8px;
+}
+
+/* =========================================================
+   NEWS PAGE
+   ========================================================= */
+.news-entry {
+    padding: 18px 0 20px;
+    border-bottom: 1px solid #e0e8f0;
+}
+.news-entry:last-child {
+    border-bottom: none;
+}
+.news-date {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--nav-active);
+    margin-bottom: 5px;
+}
+.news-headline {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--blue-mid);
+    margin-bottom: 8px;
+}
+.news-text {
+    font-size: 0.90rem;
+    color: #444;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* =========================================================
+   LANGUAGE SWITCHER
+   ========================================================= */
+.lang-switcher {
+    position: absolute;
+    right: 14px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.site-nav .lang-switcher a {
+    display: inline-block;
+    color: #777;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    padding: 4px 5px;
+    transition: color 0.15s;
+    background: none;
+}
+.site-nav .lang-switcher a:hover {
+    color: #bbb;
+    background: none;
+}
+.site-nav .lang-switcher a.lang-active {
+    color: var(--nav-active);
+}
+.lang-switcher span {
+    color: #444;
+    font-size: 0.72rem;
+    line-height: 1;
 }
 
 /* =========================================================
