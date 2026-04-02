@@ -208,6 +208,20 @@ a { text-decoration: none; }
     font-size: 0.78rem;
     color: #5a7a9a;
 }
+.person-links {
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.person-links a {
+    color: #5a7a9a;
+    font-size: 1.1rem;
+    transition: color 0.15s;
+}
+.person-links a:hover {
+    color: var(--nav-active);
+}
 @media (max-width: 768px) {
     .person-card { flex: 0 0 calc(50% - 10px); }
 }
