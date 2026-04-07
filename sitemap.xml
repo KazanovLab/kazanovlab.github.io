@@ -1,37 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kazanovlab.org/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/index.html" />
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://kazanovlab.org/ru/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/index.html" />
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://kazanovlab.org/people.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/people.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/people.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kazanovlab.org/ru/people.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/people.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/people.html" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kazanovlab.org/publication.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/publication.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/publication.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kazanovlab.org/ru/publication.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/publication.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/publication.html" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kazanovlab.org/software.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/software.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/software.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kazanovlab.org/ru/software.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/software.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/software.html" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kazanovlab.org/teaching.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/teaching.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/teaching.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kazanovlab.org/ru/teaching.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/teaching.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/teaching.html" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kazanovlab.org/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/news.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/news.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kazanovlab.org/ru/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/news.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/news.html" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://kazanovlab.org/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/contacts.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/contacts.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://kazanovlab.org/ru/contacts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kazanovlab.org/contacts.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kazanovlab.org/ru/contacts.html" />
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
